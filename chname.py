@@ -1,5 +1,6 @@
 import os
 from shutil import copyfile
+from random import shuffle
 fileList = os.listdir(os.getcwd())
 i = 0
 for f in fileList:
