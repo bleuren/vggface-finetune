@@ -10,10 +10,10 @@ layer {
   transform_param {
     mirror: true
     crop_size: 224
-    mean_file: "vggface/face_mean.binaryproto"
+    mean_file: "vggface/mean.binaryproto"
   }
   data_param {
-    source: "vggface/face_train_lmdb"
+    source: "vggface/train_lmdb"
     batch_size: 4
     backend: LMDB
   }
@@ -29,10 +29,10 @@ layer {
   transform_param {
     mirror: false
     crop_size: 224
-    mean_file: "vggface/face_mean.binaryproto"
+    mean_file: "vggface/mean.binaryproto"
   }
   data_param {
-    source: "vggface/face_val_lmdb"
+    source: "vggface/val_lmdb"
     batch_size: 4
     backend: LMDB
   }

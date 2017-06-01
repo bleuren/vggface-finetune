@@ -2,6 +2,6 @@
 EXAMPLE=vggface
 DATA=vggface
 TOOLS=./build/tools
-$TOOLS/compute_image_mean $EXAMPLE/face_train_lmdb \
-  $DATA/face_mean.binaryproto
+$TOOLS/compute_image_mean $EXAMPLE/train_lmdb \
+  $DATA/mean.binaryproto
 echo "Done."

@@ -31,7 +31,7 @@ GLOG_logtostderr=1 $TOOLS/convert_imageset.bin \
     --shuffle \
     $TRAIN_DATA_ROOT \
     $DATA/train.txt \
-    $EXAMPLE/face_train_lmdb
+    $EXAMPLE/train_lmdb
 
 echo "Creating val lmdb..."
 GLOG_logtostderr=1 $TOOLS/convert_imageset.bin \
@@ -40,5 +40,5 @@ GLOG_logtostderr=1 $TOOLS/convert_imageset.bin \
     --shuffle \
     $VAL_DATA_ROOT \
     $DATA/val.txt \
-    $EXAMPLE/face_val_lmdb
+    $EXAMPLE/val_lmdb
 echo "Done."

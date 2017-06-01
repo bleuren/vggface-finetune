@@ -10,5 +10,5 @@ max_iter: 20000
 momentum: 0.9
 weight_decay: 0.0005
 snapshot: 100
-snapshot_prefix: "vggface/models/mymodel"
+snapshot_prefix: "vggface/models/face"
 solver_mode: GPU
